@@ -26,16 +26,13 @@
                     <div class="text-left p-2 pl-5 flex-sm-row">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                              <a class="menu-sesion font-menu nav-link" href="#">Set up my Account</a>
+                              <a routerLink="/pages/agencies/list" routerLinkActive="active" class="menu-sesion font-menu nav-link" >Home</a>
                             </li>
                             <li class="nav-item">
-                              <a class="menu-sesion font-menu nav-link" href="#">Home</a>
+                              <a routerLink="/pages/agents/list" routerLinkActive="active" class="menu-sesion font-menu nav-link" >Agents</a>
                             </li>
                             <li class="nav-item">
-                              <a class="menu-sesion font-menu nav-link" href="#">Agents</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="menu-sesion font-menu nav-link" href="#">Agencies</a>
+                              <a routerLink="/pages/agencies/list" routerLinkActive="active" class="menu-sesion font-menu nav-link" >Agencies</a>
                             </li>
                             <li class="nav-item">
                                 <a class="menu-sesion font-menu nav-link" href="#">Users</a>
@@ -55,7 +52,7 @@
                               </li>
                               <li class="nav-item">
                                   <button type="button" class="close menu-sesion" (click)="logout()" tooltip="Logout" placement="bottom">
-                                      <img src="assets/img/app/power.png">
+                                      <img src=".././assets/img/logo/power.png">
                                     </button>
                               </li>
                             </ul>
