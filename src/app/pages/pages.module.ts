@@ -6,6 +6,8 @@ import {DirectivesModule} from '../theme/directives/directives.module';
 import {PipesModule} from '../theme/pipes/pipes.module';
 import {HttpModule} from '@angular/http';
 import { NguiAutoCompleteModule } from '@ngui/auto-complete';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+//import { TooltipModule} from 'ngx-bootstrap';
 
 import {routing} from './pages.routing';
 import {PagesComponent} from './pages.component';
@@ -28,7 +30,9 @@ import { FooterComponent } from '../theme/components/footer/footer.component';
     PipesModule,
     routing,
     HttpModule,
-    NguiAutoCompleteModule
+    NguiAutoCompleteModule,
+    BsDropdownModule.forRoot()
+    //TooltipModule.forRoot()
   ],
   providers:[
     {provide: LocationStrategy, useClass: HashLocationStrategy},
