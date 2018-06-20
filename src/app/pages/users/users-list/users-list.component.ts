@@ -13,6 +13,10 @@ import { UserBD } from '../shared/userbd.model';
 import { Logger } from 'angular2-logger/core';
 import { RestService } from '../../../rest/rest-service.component';
 
+declare var jquery:any;
+declare var $:any;
+
+
 @Component({
   selector: 'ubl-users-list',
   templateUrl: './users-list.component.html',
@@ -112,6 +116,7 @@ export class UsersListComponent implements OnInit {
   setUser(id: string, name:string) {
     this.userId = id;
     this.userName = name;
+    $('#confirm').modal('show');
   }
 
   /**
