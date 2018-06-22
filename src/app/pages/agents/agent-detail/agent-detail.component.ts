@@ -14,6 +14,7 @@ import 'rxjs/add/operator/switchMap';
 })
 export class AgentDetailComponent implements OnInit {
   agents: Agent;
+  c: Agent[] = [];
   agent: any;
   private sub: any;
   private response: any;
@@ -33,6 +34,7 @@ export class AgentDetailComponent implements OnInit {
         .getAgent(this.agent)
         .subscribe(c => this.agents = c);
     });
+
   }
 
 }

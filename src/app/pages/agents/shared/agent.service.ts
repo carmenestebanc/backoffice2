@@ -57,6 +57,7 @@ export class AgentService {
       .get(url, { headers: this._headers })
       .map(response => response.json().data as Agent)
       .catch(this.handleError);
+      
     return agent;
   }
    // Crea Agency
