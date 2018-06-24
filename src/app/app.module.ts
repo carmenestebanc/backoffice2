@@ -18,10 +18,12 @@ import { NguiDatetimePickerModule, NguiDatetime } from '@ngui/datetime-picker';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     ErrorComponent
+    
   ],
   imports: [
     BrowserModule,

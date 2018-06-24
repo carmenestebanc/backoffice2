@@ -57,7 +57,7 @@ export class LoginComponent {
 
   onSubmit(values: Object): void {
     if (this.form.valid) {
-      this.router.navigate(['pages/agencies']);
+      this.router.navigate(['pages/dashboard']);
       localStorage.setItem('bearer', 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6ImJjN2Q5NDIyZjY2NTlhMWQwNWI5YzhhMDcxMzA1Y2FiODEyNDI1MDdlOGE1Njc5ZTEyNzY3MTc3OTli'
       +'ZjM1Nzk1YzZjODA1MzNjMjdlMzA4In0.eyJhdWQiOiIyIiwianRpIjoiYmM3ZDk0MjJmNjY1OWExZDA1YjljOGEwNzEzMDVjYWI4MTI0MjUwN2U4YTU2NzllMTI3Njcx'
       +'Nzc5OWJmMzU3OTVjNmM4MDUzM2MyN2UzMDgiLCJpYXQiOjE1MTY0NTkxMDcsIm5iZiI6MTUxNjQ1OTEwNywiZXhwIjoxNTE2NTQ1NTA3LCJzdW'
